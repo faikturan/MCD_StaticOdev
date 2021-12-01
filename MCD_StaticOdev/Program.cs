@@ -14,11 +14,11 @@ namespace MCD_StaticOdev
              * 
              * Oluşturmuş olduğumuz ArrayList koleksiyonumuzu sanal bir database mantığında kullanacağız.
              * Müşteri sınıfımızın içerisine
-             * ID, Isim, Soyisim, EmailAdres, KullaniciAdi, Sifre isimleri ile fieldkar oluşturalım.
+             * ID, Isim, Soyisim, EmailAdres, KullaniciAdi, Sifre isimleri ile fieldlar oluşturalım.
              * 
              * Oluşturmuş olduğumuz bu field listesinden bazılarının kapsülleme filtreleri aşağıdaki gibi olmalodor.
              * 
-             * Kullanici adı değeri sanal olarak oluşturmuş olduğumuz database imiz içerisinde aranan eğer kullanıcı adı sanal database içerisinde bulunursa field i.erisine eklemöek istenen değer eklenemesin(Kapsülleme)
+             * Kullanici adı değeri sanal olarak oluşturmuş olduğumuz database imiz içerisinde aranan eğer kullanıcı adı sanal database içerisinde bulunursa field içerisine eklemek istenen değer eklenemesin(Kapsülleme)
              * 
              * Müşteri ekle adında static metot oluşturalım parametre olarak  müşteri tipi alsın içerisinde
              * Müşteri nesnesinin null okup olmadığını ve müşteri nesnesi içerisindeki kullanıcı adının dolu olması şartına baksın.
