@@ -71,6 +71,30 @@ namespace MCD_StaticOdev
             return Kontrol;
         }
 
+        public static void MusteriEkle(Musteri M)
+        {
+            #region Parametre Kontrol
+            if (M != null && !string.IsNullOrEmpty(M.KullaniciAdi) && !string.IsNullOrEmpty(M.emailAdres))
+            {
+                bool emailAdresKontrol = musteriEmailAdresKontrol(M.emailAdres);
+                if (emailAdresKontrol)
+                {
+                    Console.WriteLine("Eklemek istediğiniz kullanıcı sistemde kayıtlı");
+                }
+                else
+                {
+                    musteriDatabase.Add(M);
+                    Console.WriteLine("Yeni Kayıt işlemi başarılı ");
+                }
+            }
+
+            #endregion
+        }
+
+        private static bool musteriEmailAdresKontrol(string emailAdres)
+        {
+            throw new NotImplementedException();
+        }
 
 
 

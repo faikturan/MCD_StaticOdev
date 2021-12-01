@@ -21,7 +21,7 @@ namespace MCD_StaticOdev
              * Kullanici adı değeri sanal olarak oluşturmuş olduğumuz database imiz içerisinde aranan eğer kullanıcı adı sanal database içerisinde bulunursa field içerisine eklemek istenen değer eklenemesin(Kapsülleme)
              * 
              * Müşteri ekle adında static metot oluşturalım parametre olarak  müşteri tipi alsın içerisinde
-             * Müşteri nesnesinin null okup olmadığını ve müşteri nesnesi içerisindeki kullanıcı adının dolu olması şartına baksın.
+             * Müşteri nesnesinin null olup olmadığını ve müşteri nesnesi içerisindeki kullanıcı adının dolu olması şartına baksın.
              * Yukarıdaki kriterlerden geçerse müşterimizi sanal olarak oluşturduğumuz database imize eklemeden önce email adresinden bir kontrol sağlasın eğer sistemde aynı email adresi ile müşteri değeri var ise eklemesin yok ise sanal database içerisine ilgili nesneyi eklesin.
              * 
              * 
