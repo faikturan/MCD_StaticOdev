@@ -10,7 +10,7 @@ namespace MCD_StaticOdev
     public class Musteri
     {
         #region Sanal Database
-        static ArrayList musteriDatabase;
+        public static ArrayList musteriDatabase;
         #endregion
 
         #region Static Yapıcı Metot
@@ -91,9 +91,20 @@ namespace MCD_StaticOdev
             #endregion
         }
 
-        private static bool musteriEmailAdresKontrol(string emailAdres)
+       static bool musteriEmailAdresKontrol(string _emailAdres)
         {
-            throw new NotImplementedException();
+            bool Kontrol = false;
+
+            for (int i = 0; i < musteriDatabase.Count; i++)
+            {
+                Musteri Temp = (Musteri)musteriDatabase[i];
+                if (Temp.emailAdres == _emailAdres)
+                {
+                    Kontrol = true;
+                    break;
+                }
+            }
+            return Kontrol;
         }
 
 
