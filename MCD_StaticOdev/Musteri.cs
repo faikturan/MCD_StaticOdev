@@ -53,12 +53,27 @@ namespace MCD_StaticOdev
         }
         #endregion
 
-        private bool musteriKullaniciAdiKontrol(string value)
+        #region  Static Metotlar
+        static bool musteriKullaniciAdiKontrol(string _kullaciadi)
         {
-            throw new NotImplementedException();
+            bool Kontrol = false;
+
+            for (int i = 0; i < musteriDatabase.Count; i++)
+            {
+                Musteri Temp = (Musteri)musteriDatabase[i];
+                if (Temp.KullaniciAdi == _kullaciadi)
+                {
+                    Kontrol = true;
+                    break;
+                }
+            }
+
+            return Kontrol;
         }
 
-       
 
+
+
+        #endregion
     }
 }
